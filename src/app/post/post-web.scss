@@ -1,0 +1,252 @@
+
+
+.post-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.post-title {
+    text-align: center;
+    margin: 2vw;
+    margin-top: 0vw;
+    margin-top: 12vw;
+
+    h1 {
+        font-size: 2.5vw;
+        font-weight: 100;
+    }
+}
+
+.content-info {
+    display: flex;
+    margin: auto;
+    margin-bottom: 5vw;
+}
+
+.content-left-text {
+    width: 40vw;
+    margin: auto;   
+    margin-left: 10vw;
+    margin-top: 0vw;
+}
+
+.content-left-image {
+    width: 50vw;
+    margin: auto;
+    margin-right: 0vw;
+}
+
+.sub-title {
+    margin: auto;
+    
+    h1 {
+        margin-top: 0vw;
+        margin-bottom: 0vw;
+        font-size: 2vw;
+        font-weight: 100;
+    }
+}
+
+.content-left h1 {
+    font-size: 2vw;
+    margin-top: 0vw;
+}
+
+.content-full-text {
+    width: 80vw;
+    margin: auto;
+}
+
+.content-full-text .sub-title h1 {
+    text-align: center;
+}
+
+.paragraph {
+    font-size: 1vw;
+    text-align: justify;
+    margin: auto;
+}
+
+.image-right {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    margin-right: 10vw;
+}
+
+.content-right-text {
+    margin: auto;   
+    width: 40vw;
+    height: auto;
+}
+
+.content-right-image {
+    width: 50vw;
+    height: auto;
+}
+
+.single-image  {
+    display: flex;
+    margin: auto;
+}
+
+.single-image img {
+    height: auto;
+    width: 40vw;
+    margin: auto;
+}
+
+.single-image-mini img {
+    height: auto;
+    width: 25vw;
+    margin: auto;
+    display: flex;
+}
+
+
+.single-image-medium img {
+    height: auto;
+    width: 30vw;
+    margin: auto;
+    display: flex;
+}
+
+.mini img {
+    height: auto;
+    width: 20vw;
+    margin: auto;
+}
+
+.content-full {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-list {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.single-video {
+    display: flex;
+    margin: auto;
+}
+
+.single-video video {
+    width: 40vw;
+    margin: auto;
+    height: auto;
+}
+
+.header {    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 20vh;
+    background: black;
+    z-index: 5;
+    border-bottom: 1px solid #a86a33;
+}
+
+.mask-img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+.mask-me {
+  mask-image: url(./../../assets/images/posts/1/mask2.png);
+  -webkit-mask-image: url(./../../assets/images/posts/1/mask2.png);
+  mask-size: 118%;
+  -webkit-mask-size: 118%;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat:no-repeat;
+  -webkit-mask-repeat:no-repeat;
+}
+
+.mask-heroes {
+  mask-image: url(./../../assets/images/posts/1/mask3.png);
+  -webkit-mask-image: url(./../../assets/images/posts/1/mask3.png);
+  mask-size: 115%;
+  -webkit-mask-size: 115%;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat:no-repeat;
+  -webkit-mask-repeat:no-repeat;
+}
+
+
+.small-margin {
+    margin-bottom: -1vw !important;
+}
+
+.margin-top-auto {
+    margin-top: auto;
+}
+
+.modalShare {
+    animation: fadeIn 1s forwards;
+    display: none; /* Inicialmente escondida */
+    position: fixed;
+    bottom: -1vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    background: white;
+    padding: 1vw;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    background: rgba(150, 255, 0, 0.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+    border-radius: 15px;
+    backdrop-filter: blur(40px);
+    
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 0px 10px 10px rgba(46, 54, 68, 0.03);
+
+    p {
+        cursor: pointer;
+        color: white;
+        font-size: 0.8vw;
+        margin: auto;
+        margin-left: 0.5vw;
+    }
+}
+
+.modalShare.show {
+    display: flex;
+    animation: fadeIn 1s forwards;
+}
+
+.modalShare.hide {
+    animation: fadeOut 1s forwards;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.shareClass {
+  position: fixed;
+  left: 2vw;
+  bottom: 1vw;
+  z-index: 99;
+  opacity: 0.5;
+
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out; 
+}

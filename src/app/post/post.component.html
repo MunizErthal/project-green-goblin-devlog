@@ -1,0 +1,37 @@
+
+<div class="header fadeInContent"></div>
+<div class="backgroundPage">     
+    <div class="lenguageClass">
+        <label (click)="changeLanguage()" style=" z-index: 10; cursor: pointer; color: white; font-size: 1.5vw; font-family: Cinzel;">{{ 'LANGUAGE' | translate:'home' }}</label>
+    </div>
+
+    <div style="position: fixed; cursor: pointer; width: 100vw; height: 10vw; display: flex; flex-direction: column; z-index: 10;">
+        <div id="divLogo" style="margin: auto;">
+            <img (click)="back()" src="images/logo2.png" style="width: 15vw; height: auto;">
+        </div>
+        <div (click)="back()" id="textProject" class="gesture__indicator" style="cursor: pointer; margin: auto; width: 25vw; text-align: right;">
+            <label style="cursor: pointer;  color: white; font-size: 2vw; font-family: Cinzel Decorative;">Project Green Goblin</label>
+        </div>
+        <div (click)="back()" id="textProjectDevLog" class="gesture__indicator" style="cursor: pointer; margin: auto; margin-top: -0.5vw; text-align: right; width: 25vw;">
+            <label style="cursor: pointer;  color: white; font-size: 0.8vw; font-family: Cinzel;">DevLog</label>
+        </div>
+    </div>
+
+    <div [innerHTML]="postHtml" class="fadeInContent"></div>
+
+    <div class="modalShare" id="modalShare">
+        <share-buttons [theme]="'circles-dark'"
+            [include]="['whatsapp', 'x', 'facebook', 'reddit', 'linkedin', 'telegram', 'messenger','copy']"
+            [show]="8" [url]="'https://projectgreengoblin.com/' + postName">
+        </share-buttons>
+        <p (click)="closeModal()">{{ 'CANCEL' | translate:'home' }}</p>
+    </div>
+
+    <div class="shareClass">
+        <label (click)="sharePost()" style="cursor: pointer; color: white; font-size: 1.5vw; font-family: Cinzel;">{{ 'SHARE' | translate:'home' }}</label>
+    </div>
+
+    <div class="backClass">
+        <label (click)="back()" style="cursor: pointer; color: white; font-size: 1.5vw; font-family: Cinzel;">{{ 'BACK' | translate:'home' }}</label>
+    </div>
+</div>

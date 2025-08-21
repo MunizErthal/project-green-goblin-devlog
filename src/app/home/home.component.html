@@ -1,0 +1,61 @@
+<div class="lenguageClass">
+    <p (click)="changeLanguage()">{{ 'LANGUAGE' | translate:'home' }}</p>
+</div>
+
+<div class="containerLogo fadeIn">
+    <div class="divLogo">
+        <img src="images/logo2.png">
+    </div>
+    <div class="textProject gesture__indicator">
+        <p>Project Green Goblin</p>
+    </div>
+    <div class="textProjectDevLog gesture__indicator">
+        <p>DevLog</p>
+    </div>
+</div>
+
+<div class="container fadeIn">
+    <div *ngFor="let post of posts" class="card gesture__indicator">
+        <div class="content">
+            <div class="img"><img src="images/background.png"></div>
+            <div class="cardContent">
+                <h3>{{language == 'en' ? post.titleEn : post.titlePt}}<br>
+                <span>{{ post.postDate | timeAgo: language }}</span></h3>
+            </div>
+        </div>
+        <ul class="sci">
+            <li (click)="sharePost(post.post)" style="--i:1">
+                <p class="cardButton">{{ 'SHARE' | translate:'home' }}</p>
+            </li>
+            <li (click)="openPost(post.post)" style="--i:2">
+                <p class="cardButton">{{ 'READ' | translate:'home' }}</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="social fadeIn">
+    <div class="instagramSocialIcon" (click)="openInstagram()">
+        <img src="images/icons/social/instagram.png">
+    </div>
+</div>
+
+<div class="menusFooterClass">
+    <div class="menuFooterItem">
+        <p (click)="toContact()">{{ 'CONTACT' | translate:'home' }}</p>
+    </div>
+    <div class="menuFooterItem">
+        <p (click)="toAbout()">{{ 'ABOUT' | translate:'home' }}</p>
+    </div>
+    <div class="menuFooterItem">
+        <p (click)="toHelp()">{{ 'HELPUS' | translate:'home' }}</p>
+    </div>
+</div>
+
+<div class="modalShare" id="modalShare">
+    <share-buttons [theme]="'circles-dark'"
+        [include]="['whatsapp', 'x', 'facebook', 'reddit', 'linkedin', 'telegram', 'messenger','copy']"
+        [show]="8" [url]="'https://projectgreengoblin.com/' + currentPostShare">
+    </share-buttons>
+    <p (click)="closeModal()">{{ 'CANCEL' | translate:'home' }}</p>
+</div>

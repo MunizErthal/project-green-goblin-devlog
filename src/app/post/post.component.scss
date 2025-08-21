@@ -1,0 +1,46 @@
+@keyframes moveAndShrink {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(-42vw, -4vw) scale(0.5);
+    }
+}
+
+@keyframes moveAndShrinkText {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(-36vw, -8.8vw) scale(0.5);
+    }
+}
+
+@keyframes moveAndShrinkTextDevlog {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(-41.1vw, -9.5vw) scale(0.7);
+    }
+}
+
+.fadeInContent {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+#divLogo {
+    animation: moveAndShrink 2s forwards;
+}
+
+#textProject {
+    animation: moveAndShrinkText 2s forwards;
+    transform-origin: left center; /* Define o ponto de origem da transformação */
+}
+
+#textProjectDevLog {
+    animation: moveAndShrinkTextDevlog 2s forwards;
+    transform-origin: left center; /* Define o ponto de origem da transformação */
+}

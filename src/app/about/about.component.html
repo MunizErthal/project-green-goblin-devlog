@@ -1,0 +1,39 @@
+<div class="backgroundPage backgroundComponent">     
+    <div class="lenguageClass">
+        <p (click)="changeLanguage()">{{ 'LANGUAGE' | translate:'home' }}</p>
+    </div>
+
+    <div style="margin-top: -9.1vw;" class="containerLogo fadeIn">
+        <div class="divLogo">
+            <img src="images/logo2.png">
+        </div>
+        <div class="textProject gesture__indicator">
+            <p>Project Green Goblin</p>
+        </div>
+        <div class="textProjectDevLog gesture__indicator">
+            <p>DevLog</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <p class="textAbout">{{ 'P1' | translate:'about' }}</p>
+        <p class="textAbout">{{ 'P2' | translate:'about' }}</p>
+        <p class="textAbout">{{ 'P3' | translate:'about' }}</p>
+    </div>
+
+    <div class="backClass">
+        <label (click)="back()" style="cursor: pointer; color: white; font-size: 1.5vw; font-family: Cinzel;">{{ 'BACK' | translate:'home' }}</label>
+    </div>
+
+    <div class="menusFooterClass">
+        <div class="menuFooterItem">
+            <p (click)="toContact()">{{ 'CONTACT' | translate:'home' }}</p>
+        </div>
+        <div class="menuFooterItem">
+            <p (click)="toAbout()">{{ 'ABOUT' | translate:'home' }}</p>
+        </div>
+        <div class="menuFooterItem">
+            <p (click)="toHelp()">{{ 'HELPUS' | translate:'home' }}</p>
+        </div>
+    </div>
+</div>

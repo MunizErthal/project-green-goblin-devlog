@@ -1,0 +1,22 @@
+{
+  "en": {
+    "LANGUAGE":"PT",
+    "SHARE": "Share",
+    "READ": "Read",
+    "CONTACT": "Contact",
+    "ABOUT": "About",
+    "HELPUS": "Help Us",
+    "CANCEL": "Cancel",
+    "BACK": "Back"
+  },
+  "pt": {
+    "LANGUAGE":"EN",
+    "SHARE": "Compartilhar",
+    "READ": "Ler",
+    "CONTACT": "Contato",
+    "ABOUT": "Sobre",
+    "HELPUS": "Apoie",
+    "CANCEL": "Cancelar",
+    "BACK": "Voltar"
+    }
+}
