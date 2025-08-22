@@ -10,7 +10,7 @@ import { LanguageService } from '../../services/language.service';
   selector: 'app-home',
   imports: [TimeAgoPipe, CommonModule, ShareButtons, TranslatePipe],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrls: ['./home.component.scss', './mobile-home.component.scss']
 })
 export class HomeComponent {
   language: string = 'en';  // en ou pt

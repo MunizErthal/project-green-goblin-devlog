@@ -1,58 +1,58 @@
-<div class="lenguageClass">
+<div [class]="(mobileMenu ? 'mobile-' : '') + 'languageClass'">
     <p (click)="changeLanguage()">{{ 'LANGUAGE' | translate:'home' }}</p>
 </div>
 
-<div class="containerLogo fadeIn">
-    <div class="divLogo">
+<div [class]="(mobileMenu ? 'mobile-' : '') + 'containerLogo fadeIn'">
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'divLogo'">
         <img src="images/logo2.png">
     </div>
-    <div class="textProject gesture__indicator">
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'textProject gesture__indicator'">
         <p>Project Green Goblin</p>
     </div>
-    <div class="textProjectDevLog gesture__indicator">
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'textProjectDevLog gesture__indicator'">
         <p>DevLog</p>
     </div>
 </div>
 
-<div class="container fadeIn">
-    <div *ngFor="let post of posts" class="card gesture__indicator">
-        <div class="content">
-            <div class="img"><img src="images/background.png"></div>
-            <div class="cardContent">
+<div [class]="(mobileMenu ? 'mobile-' : '') + 'container fadeIn'">
+    <div *ngFor="let post of posts" [class]="(mobileMenu ? 'mobile-' : '') + 'card gesture__indicator'">
+        <div [class]="(mobileMenu ? 'mobile-' : '') + 'content'">
+            <div [class]="(mobileMenu ? 'mobile-' : '') + 'img'"><img src="images/background.png"></div>
+            <div [class]="(mobileMenu ? 'mobile-' : '') + 'cardContent'">
                 <h3>{{language == 'en' ? post.titleEn : post.titlePt}}<br>
                 <span>{{ post.postDate | timeAgo: language }}</span></h3>
             </div>
         </div>
-        <ul class="sci">
-            <li (click)="sharePost(post.post)" style="--i:1">
-                <p class="cardButton">{{ 'SHARE' | translate:'home' }}</p>
+        <ul [class]="(mobileMenu ? 'mobile-' : '') + 'sci'">
+            <li (click)="sharePost(post.post)" style="--i:1; margin-right: 2vw;">
+                <p [class]="(mobileMenu ? 'mobile-' : '') + 'cardButton'">{{ 'SHARE' | translate:'home' }}</p>
             </li>
-            <li (click)="openPost(post.post)" style="--i:2">
-                <p class="cardButton">{{ 'READ' | translate:'home' }}</p>
+            <li (click)="openPost(post.post)" style="--i:2; margin-left: 2vw;">
+                <p [class]="(mobileMenu ? 'mobile-' : '') + 'cardButton'">{{ 'READ' | translate:'home' }}</p>
             </li>
         </ul>
     </div>
 </div>
 
-<div class="social fadeIn">
-    <div class="instagramSocialIcon" (click)="openInstagram()">
+<div [class]="(mobileMenu ? 'mobile-' : '') + 'social fadeIn'">
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'instagramSocialIcon'" (click)="openInstagram()">
         <img src="images/icons/social/instagram.png">
     </div>
 </div>
 
-<div class="menusFooterClass">
-    <div class="menuFooterItem">
+<div [class]="(mobileMenu ? 'mobile-' : '') + 'menusFooterClass'">
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'menuFooterItem'">
         <p (click)="toContact()">{{ 'CONTACT' | translate:'home' }}</p>
     </div>
-    <div class="menuFooterItem">
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'menuFooterItem'">
         <p (click)="toAbout()">{{ 'ABOUT' | translate:'home' }}</p>
     </div>
-    <div class="menuFooterItem">
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'menuFooterItem'">
         <p (click)="toHelp()">{{ 'HELPUS' | translate:'home' }}</p>
     </div>
 </div>
 
-<div class="modalShare" id="modalShare">
+<div [class]="(mobileMenu ? 'mobile-' : '') + 'modalShare'" id="modalShare">
     <share-buttons [theme]="'circles-dark'"
         [include]="['whatsapp', 'x', 'facebook', 'reddit', 'linkedin', 'telegram', 'messenger','copy']"
         [show]="8" [url]="'https://projectgreengoblin.com/' + currentPostShare">
