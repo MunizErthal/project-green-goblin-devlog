@@ -8,7 +8,7 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
   selector: 'app-contact',
   imports: [CommonModule, TranslatePipe],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrls: ['./contact.component.scss', './mobile-contact.component.scss']
 })
 export class ContactComponent {
 

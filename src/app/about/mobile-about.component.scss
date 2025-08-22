@@ -1,6 +1,6 @@
 .mobile-containerLogo {
     width: 100vw;
-    height: 60vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     margin-top: -36.5vw;
@@ -23,7 +23,8 @@
     margin: auto;
     width: 90vw;
     text-align: center;
-    margin-top: -6vw;
+    margin-top: -5.5vw;
+    height: 8vw;
 
     p {
         color: white;
@@ -36,9 +37,10 @@
     position: relative;
 
     margin: auto;
-    margin-top: -0.5vw;
     text-align: right;
     width: 73vw;
+    margin-top: -1vw;
+    height: 8vw;
 
     p {
         color: white;
@@ -99,6 +101,6 @@
 
 .mobile-content p {
     text-align: center;
-    font-size: 4vw;
+    font-size: 3.2vw;
     margin-bottom: 5vw;
 }

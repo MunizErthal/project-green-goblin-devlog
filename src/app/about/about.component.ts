@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-about',
   imports: [CommonModule, TranslatePipe],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  styleUrls: ['./about.component.scss', './mobile-about.component.scss']
 })
 export class AboutComponent {
 

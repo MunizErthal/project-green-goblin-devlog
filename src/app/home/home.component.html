@@ -24,10 +24,10 @@
             </div>
         </div>
         <ul [class]="(mobileMenu ? 'mobile-' : '') + 'sci'">
-            <li (click)="sharePost(post.post)" style="--i:1; margin-right: 2vw;">
+            <li (click)="sharePost(post.post)" [style]="mobileMenu ? '--i:1; margin-right: 2vw;' : '--i:1;'">
                 <p [class]="(mobileMenu ? 'mobile-' : '') + 'cardButton'">{{ 'SHARE' | translate:'home' }}</p>
             </li>
-            <li (click)="openPost(post.post)" style="--i:2; margin-left: 2vw;">
+            <li (click)="openPost(post.post)" [style]="mobileMenu ? '--i:2; margin-left: 2vw;' : '--i:2'">
                 <p [class]="(mobileMenu ? 'mobile-' : '') + 'cardButton'">{{ 'READ' | translate:'home' }}</p>
             </li>
         </ul>

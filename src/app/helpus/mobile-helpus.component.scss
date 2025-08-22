@@ -1,6 +1,6 @@
 .mobile-containerLogo {
     width: 100vw;
-    height: 60vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     margin-top: -36.5vw;
@@ -23,7 +23,8 @@
     margin: auto;
     width: 90vw;
     text-align: center;
-    margin-top: -6vw;
+    margin-top: -5.5vw;
+    height: 8vw;
 
     p {
         color: white;
@@ -36,9 +37,10 @@
     position: relative;
 
     margin: auto;
-    margin-top: -0.5vw;
     text-align: right;
     width: 73vw;
+    margin-top: -1vw;
+    height: 8vw;
 
     p {
         color: white;
@@ -101,4 +103,39 @@
     text-align: center;
     font-size: 4vw;
     margin-bottom: 5vw;
+}
+
+.mobile-modalShare {
+    animation: fadeIn 1s forwards;
+    display: flex; /* Inicialmente escondida */
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    background: white;
+    padding: 1vw;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    width: 70vw;
+    position: relative;
+    bottom: 20vw;
+
+    background: rgba(150, 255, 0, 0.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+    border-radius: 15px;
+    backdrop-filter: blur(40px);
+    
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 0px 10px 10px rgba(46, 54, 68, 0.03);
+
+    p {
+        cursor: pointer;
+        color: white;
+        font-size: 3vw;
+        margin: auto;
+        margin-left: 0.5vw;
+    }
 }

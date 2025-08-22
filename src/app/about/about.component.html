@@ -1,38 +1,38 @@
 <div class="backgroundPage backgroundComponent">     
-    <div class="languageClass">
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'languageClass'">
         <p (click)="changeLanguage()">{{ 'LANGUAGE' | translate:'home' }}</p>
     </div>
 
-    <div style="margin-top: -9.1vw;" class="containerLogo fadeIn">
-        <div class="divLogo">
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'containerLogo fadeIn'">
+        <div [class]="(mobileMenu ? 'mobile-' : '') + 'divLogo'">
             <img src="images/logo2.png">
         </div>
-        <div class="textProject gesture__indicator">
+        <div [class]="(mobileMenu ? 'mobile-' : '') + 'textProject gesture__indicator'">
             <p>Project Green Goblin</p>
         </div>
-        <div class="textProjectDevLog gesture__indicator">
+        <div [class]="(mobileMenu ? 'mobile-' : '') + 'textProjectDevLog gesture__indicator'">
             <p>DevLog</p>
         </div>
     </div>
 
-    <div class="content">
-        <p class="textAbout">{{ 'P1' | translate:'about' }}</p>
-        <p class="textAbout">{{ 'P2' | translate:'about' }}</p>
-        <p class="textAbout">{{ 'P3' | translate:'about' }}</p>
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'content'">
+        <p [class]="(mobileMenu ? 'mobile-' : '') + 'textAbout'">{{ 'P1' | translate:'about' }}</p>
+        <p [class]="(mobileMenu ? 'mobile-' : '') + 'textAbout'">{{ 'P2' | translate:'about' }}</p>
+        <p [class]="(mobileMenu ? 'mobile-' : '') + 'textAbout'">{{ 'P3' | translate:'about' }}</p>
     </div>
 
-    <div class="backClass">
-        <label (click)="back()" style="cursor: pointer; color: white; font-size: 1.5vw; font-family: Cinzel;">{{ 'BACK' | translate:'home' }}</label>
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'backClass-infos'">
+        <p (click)="back()">{{ 'BACK' | translate:'home' }}</p>
     </div>
 
-    <div class="menusFooterClass">
-        <div class="menuFooterItem">
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'menusFooterClass'">
+        <div [class]="(mobileMenu ? 'mobile-' : '') + 'menuFooterItem'">
             <p (click)="toContact()">{{ 'CONTACT' | translate:'home' }}</p>
         </div>
-        <div class="menuFooterItem">
+        <div [class]="(mobileMenu ? 'mobile-' : '') + 'menuFooterItem'">
             <p (click)="toAbout()">{{ 'ABOUT' | translate:'home' }}</p>
         </div>
-        <div class="menuFooterItem">
+        <div [class]="(mobileMenu ? 'mobile-' : '') + 'menuFooterItem'">
             <p (click)="toHelp()">{{ 'HELPUS' | translate:'home' }}</p>
         </div>
     </div>

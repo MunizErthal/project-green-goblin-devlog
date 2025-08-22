@@ -9,7 +9,7 @@ import { ShareButtons } from 'ngx-sharebuttons/buttons';
   selector: 'app-post',
   imports: [ShareButtons, CommonModule, TranslatePipe],
   templateUrl: './post.component.html',
-  styleUrls: ['./post.component.scss', './post-mobile.scss', './post-web.scss'],
+  styleUrls: ['mobile-post.component.scss', './post.component.scss', './post-mobile.scss', './post-web.scss'],
   encapsulation: ViewEncapsulation.None
 })
 export class PostComponent {
@@ -61,7 +61,8 @@ export class PostComponent {
   }
 
   loadHTML(postName: string) {
-    fetch(`posts/${this.language}/${postName}.html`)
+    var mobile = this.mobileMenu ? 'mobile' : 'web';
+    fetch(`posts/${mobile}/${this.language}/${postName}.html`)
       .then(response => response.text())
       .then(html => this.postHtml = html)
       .catch(error => console.error('Erro ao carregar o post:', error));

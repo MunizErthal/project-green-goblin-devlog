@@ -242,7 +242,7 @@ body {
 .backClass {
   position: fixed;
   right: 2vw;
-  bottom: 1vw;
+  top: 6vw;
   z-index: 99;
   opacity: 0.5;
 
@@ -253,13 +253,28 @@ body {
   -ms-transition: opacity 0.5s ease-in-out; 
 }
 
+.backClass p {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5vw;
+  font-family: Cinzel;
+  margin-bottom: 0vw;
+}
+
+.shareClass p {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5vw;
+  font-family: Cinzel;
+  margin-bottom: 0vw;
+}
 
 .languageClass {
   position: fixed;
   right: 2vw;
   top: 1vw;
   z-index: 99;
-  opacity: 0.5; 
+  opacity: 0.5;
   
   transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
@@ -270,6 +285,7 @@ body {
 }
 
 .languageClass p {
+  margin-top: 0vw;
   cursor: pointer;
   color: white;
   font-size: 1.5vw;
@@ -284,6 +300,29 @@ body {
     animation: fadeInBackground 2s forwards;
     width: 100vw;
     height: auto;
+}
+
+.sb-button {
+    margin: auto !important;
+}
+
+.backClass-infos {
+    position: absolute;
+    right: 2vw;
+    bottom: 1vw;
+    z-index: 99;
+    margin: auto;
+    display: flex;
+
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+    margin: 1vw;
+
+  p {
+    cursor: pointer;
+    color: white;
+    font-size: 1.5vw;
+  }
 }
 
 @keyframes fadeIn {
@@ -351,15 +390,51 @@ body {
     }
 }
 
-
 // MOBILE
+.mobile-backClass-infos {
+    position: absolute;
+    z-index: 99;
+    margin: auto;
+    display: flex;
+
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    width: 100vw;
+    bottom: 15vw;
+
+  p {
+    cursor: pointer;
+    color: white;
+    font-size: 5vw;
+    margin: auto;
+  }
+}
+
+.mobile-backClass p {
+  cursor: pointer;
+  color: white;
+  font-size: 5vw;
+  font-family: Cinzel;
+  margin-bottom: 2vw;
+}
+
+.mobile-shareClass p {
+  cursor: pointer;
+  color: white;
+  font-size: 5vw;
+  font-family: Cinzel;
+  margin-bottom: 2vw;
+}
+
 .mobile-languageClass {
   position: fixed;
   right: 2vw;
   top: 1vw;
   z-index: 99;
   opacity: 0.5; 
-  
+  margin: 0;
+
   transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -373,10 +448,27 @@ body {
   color: white;
   font-size: 6vw;
   font-family: Cinzel;
+  margin-top: 0vw;
 }
 
 .mobile-languageClass:hover, .mobile-shareClass:hover, .mobile-backClass:hover, .mobile-menuFooterItem:hover {
   opacity: 1 !important;
+}
+
+
+
+.mobile-backClass {
+  position: fixed;
+  right: 2vw;
+  top: 23vw;
+  z-index: 99;
+  opacity: 0.5;
+
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out; 
 }
 
 @keyframes mobileSlideStart {

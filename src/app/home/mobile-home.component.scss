@@ -42,7 +42,7 @@
     margin: auto;
     margin-top: -0.5vw;
     text-align: right;
-    width: 74vw;
+    width: 73vw;
 
     p {
         color: white;
@@ -99,6 +99,7 @@
     z-index: 1000;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    width: 90vw;
 
     background: rgba(0,255,0,0.05);
     box-shadow: 0 15px 35px rgba(0,0,0,.2);
@@ -112,7 +113,7 @@
     p {
         cursor: pointer;
         color: white;
-        font-size: 0.8vw;
+        font-size: 3vw;
         margin: auto;
         margin-left: 0.5vw;
     }

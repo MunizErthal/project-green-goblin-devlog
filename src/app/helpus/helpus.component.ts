@@ -9,7 +9,7 @@ import { ShareButtons } from 'ngx-sharebuttons/buttons';
   selector: 'app-helpus',
   imports: [ShareButtons, CommonModule, TranslatePipe],
   templateUrl: './helpus.component.html',
-  styleUrl: './helpus.component.scss'
+  styleUrls: ['./helpus.component.scss', './mobile-helpus.component.scss']
 })
 export class HelpusComponent {
 

@@ -1,37 +1,38 @@
 
-<div class="header fadeInContent"></div>
+<div [class]="(mobileMenu ? 'mobile-' : '') + 'header fadeInContent'"></div>
 <div class="backgroundPage">     
-    <div class="languageClass">
-        <label (click)="changeLanguage()" style=" z-index: 10; cursor: pointer; color: white; font-size: 1.5vw; font-family: Cinzel;">{{ 'LANGUAGE' | translate:'home' }}</label>
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'languageClass'">
+        <p (click)="changeLanguage()">{{ 'LANGUAGE' | translate:'home' }}</p>
+    </div>
+    
+
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'shareClass'">
+        <p (click)="sharePost()">{{ 'SHARE' | translate:'home' }}</p>
     </div>
 
-    <div style="position: fixed; cursor: pointer; width: 100vw; height: 10vw; display: flex; flex-direction: column; z-index: 10;">
-        <div id="divLogo" style="margin: auto;">
-            <img (click)="back()" src="images/logo2.png" style="width: 15vw; height: auto;">
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'backClass'">
+        <p (click)="back()">{{ 'BACK' | translate:'home' }}</p>
+    </div>
+
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'logo-container'">
+        <div [class]="(mobileMenu ? 'mobile-' : '') + 'divLogo'" style="margin: auto;">
+            <img (click)="back()" src="images/logo2.png">
         </div>
-        <div (click)="back()" id="textProject" class="gesture__indicator" style="cursor: pointer; margin: auto; width: 25vw; text-align: right;">
-            <label style="cursor: pointer;  color: white; font-size: 2vw; font-family: Cinzel Decorative;">Project Green Goblin</label>
+        <div (click)="back()" id="" [class]="(mobileMenu ? 'mobile-' : '') + 'logo-title gesture__indicator'">
+            <p>Project Green Goblin</p>
         </div>
-        <div (click)="back()" id="textProjectDevLog" class="gesture__indicator" style="cursor: pointer; margin: auto; margin-top: -0.5vw; text-align: right; width: 25vw;">
-            <label style="cursor: pointer;  color: white; font-size: 0.8vw; font-family: Cinzel;">DevLog</label>
+        <div (click)="back()" [class]="(mobileMenu ? 'mobile-' : '') + 'logo-devlog-title gesture__indicator'">
+            <p>DevLog</p>
         </div>
     </div>
 
     <div [innerHTML]="postHtml" class="fadeInContent"></div>
 
-    <div class="modalShare" id="modalShare">
+    <div [class]="(mobileMenu ? 'mobile-' : '') + 'modalShare'" id="modalShare">
         <share-buttons [theme]="'circles-dark'"
             [include]="['whatsapp', 'x', 'facebook', 'reddit', 'linkedin', 'telegram', 'messenger','copy']"
             [show]="8" [url]="'https://projectgreengoblin.com/' + postName">
         </share-buttons>
         <p (click)="closeModal()">{{ 'CANCEL' | translate:'home' }}</p>
-    </div>
-
-    <div class="shareClass">
-        <label (click)="sharePost()" style="cursor: pointer; color: white; font-size: 1.5vw; font-family: Cinzel;">{{ 'SHARE' | translate:'home' }}</label>
-    </div>
-
-    <div class="backClass">
-        <label (click)="back()" style="cursor: pointer; color: white; font-size: 1.5vw; font-family: Cinzel;">{{ 'BACK' | translate:'home' }}</label>
     </div>
 </div>
