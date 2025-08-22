@@ -157,7 +157,7 @@ body {
     z-index: 1;
     @include displayFlex(center, center, row);
     flex-wrap: wrap;
-    padding: 1em;
+    padding: 0em;
     
     .mobile-card {
       position: relative;
@@ -371,7 +371,7 @@ body {
 .mobile-languageClass p {
   cursor: pointer;
   color: white;
-  font-size: 7vw;
+  font-size: 6vw;
   font-family: Cinzel;
 }
 
@@ -381,7 +381,7 @@ body {
 
 @keyframes mobileSlideStart {
     from {
-        transform: translateY(40%);
+        transform: translateY(35%);
         opacity: 0;
     }
     to {
@@ -404,6 +404,6 @@ body {
         transform: translateY(0);
     }
     to {
-        transform: translateY(-43vw);
+        transform: translateY(-42vw);
     }
 }

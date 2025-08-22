@@ -3,7 +3,7 @@
 
 .mobile-containerLogo {
     width: 100vw;
-    height: 80vw;
+    height: 65vw;
     display: flex;
     flex-direction: column;
 }
@@ -12,10 +12,10 @@
     animation: mobileSlideStart 2s forwards, mobileSlideUp 2s 2s forwards;
     margin: auto;
     margin-bottom: -1vw;
-    margin-top: 40%;
+    margin-top: 35%;
 
     img {
-        width: 65vw;
+        width: 60vw;
         height: auto;
     }
 }
@@ -30,7 +30,7 @@
 
     p {
         color: white;
-        font-size: 7vw;
+        font-size: 6vw;
         font-family: Cinzel Decorative;
     }
 }
@@ -42,11 +42,11 @@
     margin: auto;
     margin-top: -0.5vw;
     text-align: right;
-    width: 86vw;
+    width: 74vw;
 
     p {
         color: white;
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 }
 
@@ -57,7 +57,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 20vw;
+    bottom: 10vw;
 }
 
 .mobile-instagramSocialIcon {
@@ -131,7 +131,7 @@
 
 .mobile-menusFooterClass {
     position: absolute;
-    left: 2vw;
+    width: 100vw;
     bottom: 1vw;
     z-index: 99;
     margin: auto;
@@ -141,12 +141,11 @@
 .mobile-menuFooterItem {
   opacity: 0.5;
   transition: opacity 0.5s ease-in-out;
-  margin: 4vw;
-  margin-bottom: 1vw;
+  margin: auto;
 
   p {
     cursor: pointer;
     color: white;
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
