@@ -75,15 +75,10 @@
 }
 
 .mobile-cardButton {
-    opacity: 0.2 !important;
     transition: opacity 0.5s ease-in-out; // Adiciona a transição
     color: white;
     font-size: 3.5vw;
     cursor: pointer;
-}
-
-.mobile-cardButton:hover {
-    opacity: 1 !important;
 }
 
 .mobile-modalShare {
